@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add CSS styles here for the hidden chat input container */
+        .chat-input-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <div id="pfp-box">
+                <img class="pfp" src="./assets/icon1.svg" alt="icon of Mathis">
+                <img class="pfp" src="/assets/icon2.svg" alt="profile picture of user">
+            </div>
+            <p id="username">
+                Mathis
+                <span>
+                    [UserName]
+                </span>
+            </p>
+        </div>
+    </header>
+    <main>
+        <p id="welcome">
+            welcome to Mathis!
+        </p>
+
+    </main>
+    <div id="buttoncontainer">
+        <div id="chat-box">
+            <button class="chat-button" id="new-chat-button">
+                <img src="./assets/chat.svg" alt="chat icon in box">
+                <p>Start New Chat</p>
+            </button>
+
+            <button class="chat-button">
+                <img src="./assets/history.svg" alt="history icon">
+                <p>View Saved Chats</p>
+            </button>
+        </div>
+        
+        <div id="input-container">
+            <div class="chat-input-container">
+                <input type="text" class="chat-input" placeholder="Enter Message Here">
+                <button class="custom-button">Send Message</button>
+            </div>
+        </div>
+        </div>
+    </div>    
+    
+    <script src="./chat.js"></script>
+    <script src="./floating.js"></script>
+</body>
+</html>

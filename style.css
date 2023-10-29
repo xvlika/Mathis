@@ -1,0 +1,240 @@
+body , html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+}
+#top {
+    width: 100%;
+    height: 196px;
+    background: #593E67;
+    display: flex;
+    justify-content: space-around;
+    transition: background 0.5s; /* Add a transition */
+}
+
+#top.curved::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    bottom: 100%;
+    background: radial-gradient(at top, transparent 50px, #593E67 50px); /* Curved background */
+}
+
+#pfp-box{
+    width: 160px;
+    display: flex;
+    justify-content:space-around;
+}
+#username{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#username > span{
+    display: block;
+}
+#welcome{
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-top: 97px;
+}
+.chat-button{
+    border-radius: 15px;
+    border: 2px solid #9685F7;
+    width: 169px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.chat-button:active{
+    scale: 0.9;
+    background-color: #7d6ed143;
+}
+#buttoncontainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 10px;
+    height: 100px;
+    transition: 0.5s;
+}
+#chat-box{
+    width: 96.15%;
+    height: 102px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.chat-button > p{
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+input{
+    all: unset;
+}
+.chat-input-container {
+    width: 95%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#input-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.chat-input {
+    width: 312px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 14px;
+    background: #9685F7;
+    padding-left: 15px;
+}
+
+.chat-input::placeholder {
+    color: #fffffff5;
+}
+
+.send-button {
+    background: #9685F7;
+    color: white;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+input{
+    color: white;
+}
+.send-button:hover {
+    background: #7d6ed1;
+}
+.custom-button {
+    display: flex;
+    background: #9685F7;
+    color: white;
+    margin: 10px 0px 0px 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    height: 45px;
+    align-items: center;
+    border-radius: 22px;
+    border: 0;
+}
+
+.custom-button:hover {
+    background: #7d6ed1;
+}
+.custom-button:active{
+    scale: 0.95;
+}
+#top.curved {
+    position: relative;
+  }
+  
+  #top.curved::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    bottom: 100%;
+    background: radial-gradient(at top, transparent 50px, #593E67 50px);
+  }
+
+.gray-background {
+    background-color: #d4d4d4; 
+    transition: background-color 0.4s; 
+}
+
+.floating-box {
+    width: 90%;
+    height: 55%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px; 
+    border: 10px solid transparent;
+
+}
+
+@keyframes gradientRotation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.floating-box.animation {
+    animation: gradientRotation 5s linear infinite;
+}
+/* floating-box.css */
+
+.floating-box {
+    width: 90%;
+    height: 55%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px; 
+    border: 10px solid transparent;
+    border-image: linear-gradient(90deg, rgba(125, 110, 209, 1) 0%, rgba(133, 114, 202, 0.8825907560289741) 67%, rgba(89, 62, 103, 1) 100%);
+    border-image-slice: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inner-box {
+    width: 95%;
+    height: 13%;
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
