@@ -182,19 +182,6 @@ input{
     transition: background-color 0.4s; 
 }
 
-.floating-box {
-    width: 90%;
-    height: 55%;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px; 
-    border: 10px solid transparent;
-
-}
 
 @keyframes gradientRotation {
     0% {
@@ -211,18 +198,16 @@ input{
 /* floating-box.css */
 
 .floating-box {
-    width: 90%;
-    height: 55%;
+    position: absolute;
+    width: 70%;
+    height: 70%;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: fixed;
-    top: 50%;
     left: 50%;
+    bottom: calc(50% - height);
     transform: translate(-50%, -50%);
     border-radius: 20px; 
-    border: 10px solid transparent;
-    border-image: linear-gradient(90deg, rgba(125, 110, 209, 1) 0%, rgba(133, 114, 202, 0.8825907560289741) 67%, rgba(89, 62, 103, 1) 100%);
-    border-image-slice: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
