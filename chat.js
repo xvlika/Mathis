@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             chatInputContainer.style.display = "flex";
             inputCreated = true;
 
-            topContainer.classList.add("curved");
+            topContainer.classList.add("curved");   
 
             const welcome = document.getElementById("welcome");
             const chatBox = document.getElementById("chat-box");
